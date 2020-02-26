@@ -6,7 +6,8 @@ RUN apt-get update && \
 EXPOSE 3000
 WORKDIR /usr/src/app
 
-COPY . .
+COPY package.json .
 RUN yarn
 
-CMD ["yarn", "start"]
+COPY . .
+CMD ["yarn", "start:dev"]
