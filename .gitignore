@@ -1,4 +1,11 @@
-
+# Excluding IDE configuration folders
 .idea/
 
+# NodeJs
 node_modules/
+
+# Compiled files
+dist/
+
+# Environment files
+*.env.*
