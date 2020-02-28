@@ -1,5 +1,4 @@
-import * as firebase from 'firebase/app';
-import 'firebase/firestore';
+import * as firebase from 'firebase-admin';
 
 async function getDocumentsFromCollection<T>(collectionName: string): Promise<T[]> {
     const documents: T[] = []
